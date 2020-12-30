@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>{{title}}</title>
+</head>
+<body>
+    {{>header}}
+    <div class="main">
+        <form >
+            <input placeholder="enter your city" type="text">
+            <button type="submit">search</button>
+        </form>
+        <p id="reqError"></p>
+            <ul>
+                <li>city: <span class="req"></span></li>
+                <li>weather: <span class="req"></span></li>
+                <li>temp: <span class="req"></span></li>
+            </ul>
+    </div>
+
+    {{>footer}}
+
+<script src="/js/app.js"></script>
+</body>
+</html>
