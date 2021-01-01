@@ -8,7 +8,7 @@ form.addEventListener("submit",(e)=>{
     e.preventDefault()
 
     const address =search.value
-    fetch("http://localhost:3000/weather?search="+address).then(res=>{
+    fetch("/weather?search="+address).then(res=>{
     res.json().then((data)=>{
         if (data.error) {
             reqError.textContent=data.error
