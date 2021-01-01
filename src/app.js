@@ -7,6 +7,7 @@ const gecode = require("./utils/gecode")
 
 // express
 const app = express()
+const port= process.env.PORT || 3000
 
 // Dirs
 const publicDir =path.join(__dirname,"../public")
@@ -80,6 +81,6 @@ app.get("*",(req,res)=>{
 
 
 // server running
-app.listen(3000,()=>{
-    console.log("server is runing");
+app.listen(port,()=>{
+    console.log("server is runing"+port);
 })
